@@ -18,6 +18,9 @@ public class LibraryModel {
     @Column(name = "author", nullable = false)
     private String author;
 
+    public LibraryModel() {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
