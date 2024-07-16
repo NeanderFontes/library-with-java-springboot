@@ -3,6 +3,7 @@ package com.library.library.DTO;
 import java.util.Objects;
 
 public class LibraryDTO {
+    private Long id;
     private String ISBN;
     private String name;
     private String author;
@@ -21,6 +22,10 @@ public class LibraryDTO {
     @Override
     public int hashCode() {
         return Objects.hash(ISBN, name, author);
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getISBN() {
