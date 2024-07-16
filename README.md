@@ -1,4 +1,4 @@
-<h1>Restaurant Service</h1>
+<h1>API Library</h1>
 
 <p>
 API RESTful para criação de menu para um restaurante
