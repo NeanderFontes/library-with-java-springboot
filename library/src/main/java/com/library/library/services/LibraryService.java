@@ -25,8 +25,7 @@ public class LibraryService {
 
     public LibraryDTO create(LibraryDTO addEntityBook) {
         LibraryModel entityModel = DozerMapper.parseObject(addEntityBook, LibraryModel.class);
-        LibraryDTO auxEntityDTO = DozerMapper.parseObject(entityModel, LibraryDTO.class);
-        repository.save(entityModel);
+        LibraryDTO auxEntityDTO = DozerMapper.parseObject(repository.save(entityModel), LibraryDTO.class);
         return auxEntityDTO;
     }
 

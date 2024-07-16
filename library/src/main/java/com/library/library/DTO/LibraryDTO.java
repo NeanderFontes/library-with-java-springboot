@@ -28,6 +28,10 @@ public class LibraryDTO {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getISBN() {
         return ISBN;
     }
